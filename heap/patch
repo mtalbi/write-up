@@ -1,0 +1,8 @@
+88c88
+< 		agents[agent_count]->name = malloc(len + 1);
+---
+> 		agents[agent_count]->name = malloc(len + 2);
+92c92
+< 		agents[agent_count]->size = len + 2 + 1;
+---
+> 		agents[agent_count]->size = len + 2;
