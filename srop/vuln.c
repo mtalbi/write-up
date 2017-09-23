@@ -37,7 +37,7 @@ void init()
  
 	if(setsockopt(s, SOL_SOCKET, SO_REUSEADDR, &k, sizeof(int)) == -1) {
 		handle_error("setsockopt failed\n");
-  }
+	}
  
 	if(bind(s, (struct sockaddr *)&sa, size)) {
 		handle_error("bind failed\n");
